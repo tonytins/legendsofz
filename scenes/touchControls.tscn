@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://sprites/ui/touchscreen/transparentDark35.png" type="Texture" id=1]
+[ext_resource path="res://sprites/ui/touchscreen/transparentDark34.png" type="Texture" id=2]
+
+[node name="touchControls" type="Node2D"]
+
+[node name="aBtn" type="TouchScreenButton" parent="."]
+position = Vector2( 275.091, 132.994 )
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 2 )
+
+[node name="bBtn" type="TouchScreenButton" parent="."]
+position = Vector2( 229.091, 132.994 )
+scale = Vector2( 0.5, 0.5 )
+normal = ExtResource( 1 )

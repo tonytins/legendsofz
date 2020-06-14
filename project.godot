@@ -19,6 +19,10 @@ config/name="Adventure Story"
 run/main_scene="res://scenes/world.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+PersistData="*res://scripts/persistData.gd"
+
 [display]
 
 window/size/width=320
@@ -94,6 +98,7 @@ gm_attack={
 2d_physics/layer_2="player"
 2d_physics/layer_3="playerHurtBox"
 2d_physics/layer_4="enemyHurtBox"
+2d_physics/layer_5="moneyHitBox"
 
 [node]
 

@@ -26,7 +26,7 @@ func _process(delta):
 			move_state(delta)
 		
 		ATTACK:
-			attack_state(delta)
+			attack_state()
 	
 func move_state(delta):	
 	var input_vector = Vector2.ZERO
@@ -49,7 +49,7 @@ func move_state(delta):
 	if Input.is_action_just_pressed("gm_attack"):
 		state = ATTACK
 
-func attack_state(delta):
+func attack_state():
 	velocity = Vector2.ZERO
 	animationState.travel("attack")
 	
