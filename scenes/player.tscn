@@ -28,6 +28,7 @@ tracks/0/keys = {
 resource_name = "idleLeft"
 length = 0.1
 loop = true
+step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -38,7 +39,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 12 ]
+"values": [ 18 ]
 }
 
 [sub_resource type="Animation" id=6]
@@ -62,6 +63,7 @@ tracks/0/keys = {
 resource_name = "idleUp"
 length = 0.1
 loop = true
+step = 0.01
 tracks/0/type = "value"
 tracks/0/path = NodePath("Sprite:frame")
 tracks/0/interp = 1
@@ -72,7 +74,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0 ),
 "transitions": PoolRealArray( 1 ),
 "update": 1,
-"values": [ 7 ]
+"values": [ 6 ]
 }
 
 [sub_resource type="Animation" id=4]
@@ -106,7 +108,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 14, 14, 15, 16, 17, 15 ]
+"values": [ 13, 14, 15, 16, 17, 12 ]
 }
 
 [sub_resource type="Animation" id=2]
@@ -140,7 +142,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
 "update": 1,
-"values": [ 7, 7, 8, 9, 10, 6 ]
+"values": [ 7, 7, 8, 9, 11, 6 ]
 }
 
 [sub_resource type="AnimationNodeAnimation" id=12]
@@ -159,11 +161,13 @@ animation = "idleUp"
 blend_point_0/node = SubResource( 12 )
 blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 13 )
-blend_point_1/pos = Vector2( 0, 1 )
+blend_point_1/pos = Vector2( 0, 1.1 )
 blend_point_2/node = SubResource( 14 )
 blend_point_2/pos = Vector2( 1, 0 )
 blend_point_3/node = SubResource( 15 )
-blend_point_3/pos = Vector2( 0, -1 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeAnimation" id=17]
@@ -184,9 +188,11 @@ blend_point_0/pos = Vector2( -1, 0 )
 blend_point_1/node = SubResource( 18 )
 blend_point_1/pos = Vector2( 1, 0 )
 blend_point_2/node = SubResource( 19 )
-blend_point_2/pos = Vector2( 0, 1 )
+blend_point_2/pos = Vector2( 0, 1.1 )
 blend_point_3/node = SubResource( 20 )
-blend_point_3/pos = Vector2( 0, -1 )
+blend_point_3/pos = Vector2( 0, -1.1 )
+min_space = Vector2( -1, -1.1 )
+max_space = Vector2( 1, 1.1 )
 blend_mode = 1
 
 [sub_resource type="AnimationNodeStateMachineTransition" id=22]
@@ -211,14 +217,12 @@ script = ExtResource( 2 )
 position = Vector2( 0, -9 )
 texture = ExtResource( 1 )
 hframes = 60
-frame = 12
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 rotation = -1.5708
 shape = SubResource( 1 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-autoplay = "idleDown"
 anims/idleDown = SubResource( 9 )
 anims/idleLeft = SubResource( 8 )
 anims/idleRight = SubResource( 6 )
@@ -233,5 +237,5 @@ tree_root = SubResource( 10 )
 anim_player = NodePath("../AnimationPlayer")
 active = true
 parameters/playback = SubResource( 11 )
-parameters/idle/blend_position = Vector2( 0, 0 )
-parameters/run/blend_position = Vector2( 0, 0 )
+parameters/idle/blend_position = Vector2( 0.207, -0.114 )
+parameters/run/blend_position = Vector2( 0, 1 )

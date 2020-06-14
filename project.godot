@@ -51,6 +51,15 @@ texture={
 "svg/scale": 1.0
 }
 
+[layer_names]
+
+2d_physics/layer_1="world"
+2d_physics/layer_2="player"
+
+[node]
+
+name_casing=1
+
 [rendering]
 
 quality/2d/use_pixel_snap=true
