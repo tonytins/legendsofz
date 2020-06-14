@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/GrassBackground.png-76a352aa34f88406dc0036e44fb67833.stex"
+path="res://.import/panel_brown.png-9e21bd4cd71cc23b13f20d9a00744a1a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/world/GrassBackground.png"
-dest_files=[ "res://.import/GrassBackground.png-76a352aa34f88406dc0036e44fb67833.stex" ]
+source_file="res://sprites/ui/panel_brown.png"
+dest_files=[ "res://.import/panel_brown.png-9e21bd4cd71cc23b13f20d9a00744a1a.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
