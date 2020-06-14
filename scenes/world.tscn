@@ -11,19 +11,19 @@
 position = Vector2( 128, 104 )
 
 [node name="bush" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 32, 80 )
+position = Vector2( 56, 88 )
 
 [node name="bush2" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 96, 144 )
 
 [node name="bush3" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 224, 136 )
+position = Vector2( 176, 144 )
 
 [node name="bush4" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 256, 72 )
+position = Vector2( 232, 40 )
 
 [node name="bush5" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 120, 40 )
 
 [node name="bush6" parent="YSort" instance=ExtResource( 1 )]
-position = Vector2( 184, 64 )
+position = Vector2( 208, 88 )
