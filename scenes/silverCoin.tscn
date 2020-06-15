@@ -15,7 +15,8 @@ scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 3 )
 
 [node name="hitBox" parent="." instance=ExtResource( 1 )]
-collision_layer = 16
+collision_layer = 1
+collision_mask = 16
 
 [node name="collisionShape2D" parent="hitBox" index="0"]
 shape = SubResource( 1 )
