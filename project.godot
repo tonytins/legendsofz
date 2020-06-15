@@ -15,7 +15,7 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Adventure Story"
+config/name="Legends of Z"
 run/main_scene="res://scenes/world.tscn"
 config/icon="res://icon.png"
 
@@ -29,6 +29,7 @@ window/size/width=320
 window/size/height=180
 window/size/test_width=1280
 window/size/test_height=720
+mouse_cursor/custom_image="res://sprites/ui/cursorHand_beige.png"
 window/stretch/mode="2d"
 window/stretch/aspect="keep"
 
@@ -105,6 +106,7 @@ gm_roll={
 2d_physics/layer_3="playerHurtBox"
 2d_physics/layer_4="enemyHurtBox"
 2d_physics/layer_5="moneyHitBox"
+2d_physics/layer_6="enemy"
 
 [node]
 
