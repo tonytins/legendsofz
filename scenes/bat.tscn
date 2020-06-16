@@ -48,7 +48,7 @@ script = ExtResource( 4 )
 [node name="sprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 6 )
 animation = "fly"
-frame = 2
+frame = 4
 playing = true
 offset = Vector2( 0, -12 )
 
@@ -73,5 +73,6 @@ margin_top = -29.6569
 margin_right = -14.0196
 margin_bottom = -29.6569
 [connection signal="area_entered" from="hurtBox" to="." method="_on_hurtBox_area_entered"]
+[connection signal="no_health" from="stats" to="." method="_on_stats_no_health"]
 
 [editable path="hurtBox"]

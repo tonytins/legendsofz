@@ -8,8 +8,11 @@ func _physics_process(delta):
 	knockback = move_and_slide(knockback)
 
 func _on_hurtBox_area_entered(area: Area2D):
+	stats.health -= 1
 	if area.monitoring == true:
 		stats.show()
 		
 	knockback = area.knockback_vector * 50
-	# queue_free()
+
+func _on_stats_no_health():
+	queue_free()
