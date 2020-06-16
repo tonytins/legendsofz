@@ -53,14 +53,14 @@ func move_state(delta):
 	else:
 		animationState.travel("idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
+		
+	move()
 	
 	if Input.is_action_just_pressed("gm_roll"):
 		state = ROLL
 	
 	if Input.is_action_just_pressed("gm_attack"):
 		state = ATTACK
-		
-	move()
 
 func attack_state():
 	velocity = Vector2.ZERO
